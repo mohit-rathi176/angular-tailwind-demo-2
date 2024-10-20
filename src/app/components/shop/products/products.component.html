@@ -1,0 +1,21 @@
+<section>
+	<div class="p-8 grid grid-cols-4 gap-8">
+		<ng-container *ngFor="let product of products">
+			<div class="rounded-lg bg-white border border-gray-200 shadow">
+				<div>
+					<img [src]="product.imageUrl" [alt]="product.name" class="w-full h-[240px] rounded-t-lg object-cover">
+				</div>
+				<div class="p-4 flex flex-col gap-2 mb-auto">
+					<h5 class="text-gray-900 text-xl font-semibold">{{ product.name }}</h5>
+					<p class="text-gray-700">{{ product.description }}</p>
+				</div>
+				<div class="p-4">
+					<button class="w-full flex items-center justify-center gap-2 p-2 rounded-md border border-[#F44336] text-[#F44336] bg-white hover:bg-[#F44336] hover:text-white">
+						<span class="material-icons-outlined">add_shopping_cart</span>
+						Add to Cart
+					</button>
+				</div>
+			</div>
+		</ng-container>
+	</div>
+</section>

@@ -1,0 +1,35 @@
+<footer class="bg-gray-900">
+	<div class="px-8 py-4 pt-8 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-y-8">
+		<div *ngFor="let link of links">
+			<h2 class="title-font font-medium text-gray-200 tracking-widest text-sm mb-3">{{ link.title | uppercase }}</h2>
+			<nav class="list-none">
+				<li *ngFor="let subLink of link.subLinks">
+					<a [href]="subLink.href" class="text-slate-300 hover:text-slate-400">{{ subLink.title }}</a>
+				</li>
+			</nav>
+		</div>
+	</div>
+	<div class="px-8 py-4 flex items-center sm:flex-row flex-col">
+		<a href="#" class="flex title-font font-medium items-center md:justify-start justify-center text-slate-100">
+      <img src="../../../assets/images/tailwind_logo.svg" alt="logo" class="w-12">
+      <span class="block ml-3 text-xl">NgShop</span>
+    </a>
+    <p class="text-sm text-slate-300 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+			© 2024 NgShop
+    </p>
+    <span class="inline-flex gap-3 sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+      <a href="#" class="text-slate-300 hover:text-[#4267B2]">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+      <a href="#" class="text-slate-300 hover:text-[#1DA1F2]">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+      <a href="#" class="text-slate-300 hover:text-[#E1306C]">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="#" class="text-slate-300 hover:text-[#0A66C2]">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+    </span>
+	</div>
+</footer>

@@ -8,6 +8,7 @@ import { ProductsComponent } from './components/shop/products/products.component
 import { FooterComponent } from './components/footer/footer.component';
 import { FiltersComponent } from './components/shop/filters/filters.component';
 import { SortButtonComponent } from './components/shop/sort-button/sort-button.component';
+import { CartComponent } from './components/header/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SortButtonComponent } from './components/shop/sort-button/sort-button.c
     ProductsComponent,
     FooterComponent,
     FiltersComponent,
-    SortButtonComponent
+    SortButtonComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IProduct } from 'src/app/models/product.model';
+import { SharedService } from 'src/app/services/shared.service';
 
 @Component({
   selector: 'app-products',
@@ -74,5 +75,11 @@ export class ProductsComponent {
       imageUrl: 'https://picsum.photos/200',
     },
   ];
+
+  constructor(private _sharedService: SharedService) { }
+
+  addToCart(): void {
+    this._sharedService.addToCart();
+  }
   
 }

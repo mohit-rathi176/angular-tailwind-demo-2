@@ -7,6 +7,7 @@ import { ShopComponent } from './components/shop/shop.component';
 import { ProductsComponent } from './components/shop/products/products.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FiltersComponent } from './components/shop/filters/filters.component';
+import { SortButtonComponent } from './components/shop/sort-button/sort-button.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FiltersComponent } from './components/shop/filters/filters.component';
     ShopComponent,
     ProductsComponent,
     FooterComponent,
-    FiltersComponent
+    FiltersComponent,
+    SortButtonComponent
   ],
   imports: [
     BrowserModule

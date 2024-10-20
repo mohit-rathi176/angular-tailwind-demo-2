@@ -7,6 +7,7 @@ import { IProduct } from 'src/app/models/product.model';
   styleUrls: ['./products.component.scss'],
 })
 export class ProductsComponent {
+
   products: IProduct[] = [
     {
       name: 'Wireless Headphones',
@@ -73,4 +74,5 @@ export class ProductsComponent {
       imageUrl: 'https://picsum.photos/200',
     },
   ];
+  
 }
